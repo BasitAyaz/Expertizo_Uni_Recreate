@@ -46,13 +46,7 @@ export default function APIHandling() {
 
 
     return <>
-        <p style={{ textAlign: 'center' }}>{count}</p>
-        <BAButton
-            label='change'
-            onClick={() => {
-                setCount(count + 1)
-            }}
-        />
+
         <BAButton onClick={get} label='Get' />
         <BAButton onClick={apiPost} label='Post' />
         <BAButton onClick={apiPut} label='Put' />

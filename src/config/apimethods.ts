@@ -1,7 +1,7 @@
 import axios from "axios";
 
 let apiHandle = axios.create({
-    baseURL: 'https://jsonplaceholder.typicode.com'
+    baseURL: 'https://fakestoreapi.com'
 })
 
 
