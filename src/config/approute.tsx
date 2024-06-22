@@ -4,6 +4,7 @@ import APIHandling from "../pages/apihandling"
 import Products from "../pages/products"
 import SingleProduct from "../pages/singleProduct"
 import Dashboard from "../pages/dashboard"
+import FirebasePractice from "../pages/firbasePractice"
 
 export default function AppRoute() {
     return <>
@@ -14,6 +15,7 @@ export default function AppRoute() {
                 <Route path="product" element={<Products />} />
                 <Route path="singleProduct/:id" element={<SingleProduct />} />
                 <Route path="dashboard/*" element={<Dashboard />} />
+                <Route path="firebase" element={<FirebasePractice />} />
             </Routes>
         </BrowserRouter>
     </>
