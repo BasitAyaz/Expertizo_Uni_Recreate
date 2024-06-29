@@ -1,16 +1,11 @@
 import BAButton from "../components/BAButton";
-import { sendData } from "../config/firebase/firebasemethods";
+import { signUpUser } from "../config/firebase/firebasemethods";
 
 export default function FirebasePractice() {
-    const sendDataToFirebase = () => {
-        let obj = {
-            userName: 'ABC',
-            age: 18,
-            inst: "EXPERTIZO"
-        }
-        sendData(obj)
+    const signUp = () => {
+        signUpUser('jkl@gmail.com', '123456')
     }
     return <>
-        <BAButton onClick={sendDataToFirebase} label="SendData" />
+        <BAButton onClick={signUp} label="Sign Up User" />
     </>
 }

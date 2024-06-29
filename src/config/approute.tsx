@@ -5,6 +5,7 @@ import Products from "../pages/products"
 import SingleProduct from "../pages/singleProduct"
 import Dashboard from "../pages/dashboard"
 import FirebasePractice from "../pages/firbasePractice"
+import SignUp from "../pages/signup"
 
 export default function AppRoute() {
     return <>
@@ -16,6 +17,7 @@ export default function AppRoute() {
                 <Route path="singleProduct/:id" element={<SingleProduct />} />
                 <Route path="dashboard/*" element={<Dashboard />} />
                 <Route path="firebase" element={<FirebasePractice />} />
+                <Route path="signup" element={<SignUp />} />
             </Routes>
         </BrowserRouter>
     </>
